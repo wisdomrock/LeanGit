@@ -129,6 +129,5 @@ public class Java8Stream {
 	@Test
 	public void test15() throws IOException {
 		Arrays.asList(1,2,3,4).stream().findAny().ifPresent(System.out::println);
-	}
-	
+	}	
 }
