@@ -126,4 +126,8 @@ public class Java8Stream {
 		persons.parallelStream().collect(Collectors.summarizingInt(Person::getAge)).andThen(System.out::println);
 	}
 	
+	@Test
+	public void test15() throws IOException {
+		Arrays.asList(1,2,3,4).stream().findAny().ifPresent(System.out::println);
+	}	
 }
